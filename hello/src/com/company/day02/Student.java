@@ -3,28 +3,28 @@ package com.company.day02;
 public class Student {
     private String name;
     private int age;
-    private boolean male;
 
-    public void setMale(boolean b) {
-        male=b;
+    public Student() {
     }
 
-    public boolean isMale() {
-        return male;
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
-    public void setName(String str) {
-        name=str;
-    }
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setAge(int num) {
-        age=num;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
         return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
