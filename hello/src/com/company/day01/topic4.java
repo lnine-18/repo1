@@ -1,4 +1,4 @@
-package com.company;
+package com.company.day01;
 
 import java.util.Random;
 
@@ -9,6 +9,7 @@ public class topic4 {
         int sum = 0;
         int aver = 0;
         int[] a = new int[50];
+
         for (int i = 0; i < 20; i++) {
             rand=random.nextInt(459-77+1)+77;
             a[i] = rand;

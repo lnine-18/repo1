@@ -1,4 +1,4 @@
-package com.company;
+package com.company.day01;
 
 import java.util.Scanner;
 
@@ -35,7 +35,7 @@ class testTriangle{
     }
 
     public double areatriangle(){
-        double area=0.0,temp;
+        double area,temp;
         temp=0.5*(a+b+c);
         area= Math.sqrt(temp*(temp-a)*(temp-b)*(temp-c));
         return area;

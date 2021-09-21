@@ -1,6 +1,6 @@
-package com.company;
+package com.company.day01;
 
-public class helloworld {
+public class HW {
     public static void helloWorld(){
         System.out.println("hello world!");
     }

@@ -1,4 +1,4 @@
-package com.company;
+package com.company.day01;
 
 public class Quicksort {
     public static void main(String[] args) {
