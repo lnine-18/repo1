@@ -3,7 +3,7 @@ package com.company.day02;
 public class Account{
     private String id,name;
     private double balance;
-    private static double totalamount;
+    public static double totalamount;
 
     public static double getTotalamount() {
         return totalamount;
@@ -60,7 +60,8 @@ public class Account{
         this.balance=this.balance-money;
         other.balance=other.balance+money;
     }
+
     public void print( String who){
-        System.out.println("账号："+ id +"户名："+"name"+"余额："+balance);
+        System.out.println("账号："+ id +" 户名："+name+" 余额："+balance);
     }
 }

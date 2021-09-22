@@ -11,9 +11,9 @@ public class Testaccout {
         people2.withdrow(6000);
         people1.transfer(people2,2500);
         people3.deposite(2000);
-        System.out.println("张三的余额为："+people1.getBalance());
-        System.out.println("李四的余额为："+people2.getBalance());
-        System.out.println("王五的余额为："+people3.getBalance());
+        people1.print("张三");
+        people2.print("李四");
+        people3.print("王五");
         System.out.println("银行账户总额为："+Account.getTotalamount());
     }
 }
