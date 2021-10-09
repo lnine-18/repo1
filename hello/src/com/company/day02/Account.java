@@ -5,10 +5,9 @@ public class Account{
     private double balance;
     public static double totalamount;
 
-    public static double getTotalamount() {
+    public static double getTotalamount() {;
         return totalamount;
     }
-
     public static void setTotalamount(double totalamount) {
         Account.totalamount = totalamount;
     }
@@ -36,6 +35,7 @@ public class Account{
         this.id = id;
         this.name = name;
         this.balance = balance;
+        totalamount+=balance;
     }
     public Account() {
         this.id="";
@@ -44,14 +44,14 @@ public class Account{
     }
     public void deposite(double money) {
         this.balance = this.balance + money;
-        this.totalamount=this.totalamount+this.balance;
+        this.totalamount=this.totalamount+money;
     }
     public void withdrow(double money){
         if(this.balance<money){
             System.out.println("余额不足，无法取钱");
-        }
+        }else
         this.balance=this.balance-money;
-        this.totalamount=this.totalamount+this.balance;
+        this.totalamount=this.totalamount-money;
     }
     public void transfer(Account other,double money){
         if(this.balance<money){
@@ -59,6 +59,7 @@ public class Account{
         }
         this.balance=this.balance-money;
         other.balance=other.balance+money;
+
     }
 
     public void print( String who){

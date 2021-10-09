@@ -11,7 +11,7 @@ public class topic4 {
         int[] a = new int[50];
 
         for (int i = 0; i < 20; i++) {
-            rand=random.nextInt(459-77+1)+77;
+            rand=random.nextInt(383)+77;
             a[i] = rand;
         }
         for (int i = 0; i < a.length; i++) {
