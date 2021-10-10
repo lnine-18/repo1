@@ -38,8 +38,8 @@ public class Account{
         totalamount+=balance;
     }
     public Account() {
-        this.id="";
-        this.name="";
+        this.id=" ";
+        this.name=" ";
         this.balance=0;
     }
     public void deposite(double money) {
