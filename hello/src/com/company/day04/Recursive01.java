@@ -1,5 +1,7 @@
 package com.company.day04;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.io.File;
 import java.util.Arrays;
 
@@ -16,6 +18,7 @@ public class Recursive01 {
         for (File a : files) {
             if (a.isDirectory()) {
                 getallfile(a);
+               // System.out.println(a);
             }
             if (a.isFile()) {
                 System.out.println(a);
