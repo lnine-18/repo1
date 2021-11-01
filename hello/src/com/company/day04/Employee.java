@@ -1,21 +1,9 @@
 package com.company.day04;
 
-public class Employee implements Comparable {
+public class Employee implements Comparable<Employee>{
     private String name;
     private int age ;
     private double salary;
-
-    @Override
-    public  int compareTo(Object o) {
-        Employee emp = (Employee)o;
-        if(this.salary!= emp.salary){
-            return(int)(this.salary-salary);
-        }
-        if (this.age!=age){
-            return this.age-age;
-        }
-        return this.name.compareTo(emp.name);
-    }
 
     public Employee() {
     }
@@ -50,4 +38,23 @@ public class Employee implements Comparable {
         this.salary = salary;
     }
 
+    @Override
+    public int compareTo(Employee o) {
+        if(this.getSalary()!=o.getSalary()){
+            return (int) (this.getSalary()-o.getSalary());
+        }if (this.getSalary()==o.getSalary()&&this.getAge()!=o.getAge()){
+            return this.getAge()-o.getAge();
+        }
+        return this.getName().compareTo(o.getName());
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
+    }
 }
+
