@@ -83,7 +83,7 @@ public class LogMain extends JFrame {
                 int month = Integer.parseInt(cbxMonth.getSelectedItem().toString());
                 //将cbxDay组件添加天数列表
                 cbxDay.removeAllItems();
-                for (int i = 0; i <= getDay(year, month); i++) {
+                for (int i = 1; i <= getDay(year, month); i++) {
                     cbxDay.addItem(String.valueOf(i));
                 }
             }
