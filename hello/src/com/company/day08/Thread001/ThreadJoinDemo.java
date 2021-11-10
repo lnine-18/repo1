@@ -1,4 +1,4 @@
-package com.company.day08;
+package com.company.day08.Thread001;
 
 public class ThreadJoinDemo extends Thread{
       public void run(){
